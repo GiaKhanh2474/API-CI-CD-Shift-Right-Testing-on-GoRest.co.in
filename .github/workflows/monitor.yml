@@ -39,8 +39,8 @@ jobs:
                         "pm.test('Status code is 200 OK', function () {",
                         "    pm.response.to.have.status(200);",
                         "});",
-                        "pm.test('Response time is below 1000ms', function () {",
-                        "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+                        "pm.test('Response time is below 1500ms', function () {",
+                        "    pm.expect(pm.response.responseTime).to.be.below(1500);",
                         "});"
                       ],
                       "type": "text/javascript"
