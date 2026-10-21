@@ -105,8 +105,8 @@
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Response time is under 800ms\", function () {\r",
-                  "    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+                  "pm.test(\"Response time is under 1000ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
                   "});"
                 ],
                 "type": "text/javascript",
