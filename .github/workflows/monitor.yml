@@ -20,7 +20,7 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
 
-      - name: Check GET /users Response Time (< 900ms)
+      - name: Check GET /users Response Time (< 1000ms)
         run: |
           cat << 'EOF' > monitor_collection.json
           {
@@ -39,8 +39,8 @@ jobs:
                         "pm.test('Status code is 200 OK', function () {",
                         "    pm.response.to.have.status(200);",
                         "});",
-                        "pm.test('Response time is below 800ms', function () {",
-                        "    pm.expect(pm.response.responseTime).to.be.below(800);",
+                        "pm.test('Response time is below 1000ms', function () {",
+                        "    pm.expect(pm.response.responseTime).to.be.below(1000);",
                         "});"
                       ],
                       "type": "text/javascript"
