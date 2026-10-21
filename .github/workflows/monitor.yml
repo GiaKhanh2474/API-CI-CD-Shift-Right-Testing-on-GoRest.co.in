@@ -20,7 +20,7 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
 
-      - name: Check GET /users Response Time (< 800ms)
+      - name: Check GET /users Response Time (< 1000ms)
         run: |
           cat << 'EOF' > monitor_collection.json
           {
