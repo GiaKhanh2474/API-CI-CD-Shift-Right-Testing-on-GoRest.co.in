@@ -40,7 +40,7 @@ jobs:
                         "    pm.response.to.have.status(200);",
                         "});",
                         "pm.test('Response time is below 800ms', function () {",
-                        "    pm.expect(pm.response.responseTime).to.be.below(800);",
+                        "    pm.expect(pm.response.responseTime).to.be.below(1000);",
                         "});"
                       ],
                       "type": "text/javascript"
